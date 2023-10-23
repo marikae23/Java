@@ -11,10 +11,8 @@ import java.util.Scanner;
 
 public class aulas_java {
     public static void main(String[] args) {
-    	// importamos a classe Scanner para poder ler dados do teclado. Criação de uma instância do Scanner:
         Scanner input = new Scanner(System.in);
         
-        // Input para ler os valores de ponto flutuante. Leitura dos valores de A, B e C
         System.out.print("Digite o valor de A: ");
         double A = input.nextDouble();
         System.out.print("Digite o valor de B: ");
@@ -22,14 +20,12 @@ public class aulas_java {
         System.out.print("Digite o valor de C: ");
         double C = input.nextDouble();
         
-        // System.out.print para solicitar ao usuário que insira os valores e input.nextDouble() para ler esses valores como números de ponto flutuante e armazená-los nas variáveis. Cálculo das áreas
         double areaTriangulo = (A * C) / 2;
         double areaCirculo = 3.14159 * (C * C);
         double areaTrapezio = ((A + B) * C) / 2;
         double areaQuadrado = B * B;
         double areaRetangulo = A * B;
-        
-        // Exibição das áreas calculadas
+    
         System.out.printf("Área do triângulo: %.4f%n", areaTriangulo);
         System.out.printf("Área do círculo: %.4f%n", areaCirculo);
         System.out.printf("Área do trapézio: %.4f%n", areaTrapezio);
@@ -40,3 +36,38 @@ public class aulas_java {
     }
 }
 
+
+// Fazer um programa para ler quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto de C e D segundo a fórmula: DIFERENÇA = (A * B - C * D).
+
+// Entrada:     Saída:
+// 5            Diferença = -26
+// 6
+// 7
+// 8
+
+import java.util.Scanner;
+
+public class CalculoDiferenca {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira os valores de A, B, C e D
+        System.out.print("Digite o valor de A: ");
+        int A = scanner.nextInt();
+        System.out.print("Digite o valor de B: ");
+        int B = scanner.nextInt();
+        System.out.print("Digite o valor de C: ");
+        int C = scanner.nextInt();
+        System.out.print("Digite o valor de D: ");
+        int D = scanner.nextInt();
+
+        // Calcula a diferença do produto de C e D
+        int diferenca = (A * B - C * D);
+
+        // Exibe o resultado
+        System.out.println("A diferença do produto de C e D é: " + diferenca);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
