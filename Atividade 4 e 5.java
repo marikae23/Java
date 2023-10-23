@@ -52,7 +52,6 @@ public class CalculoDiferenca {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicita ao usuário que insira os valores de A, B, C e D
         System.out.print("Digite o valor de A: ");
         int A = scanner.nextInt();
         System.out.print("Digite o valor de B: ");
@@ -62,13 +61,10 @@ public class CalculoDiferenca {
         System.out.print("Digite o valor de D: ");
         int D = scanner.nextInt();
 
-        // Calcula a diferença do produto de C e D
         int diferenca = (A * B - C * D);
 
-        // Exibe o resultado
         System.out.println("A diferença do produto de C e D é: " + diferenca);
 
-        // Fecha o scanner
         scanner.close();
     }
 }
