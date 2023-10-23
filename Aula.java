@@ -21,6 +21,7 @@ public class Teste {
     }
 }
 
+﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏
 
 package aula_Java;
 import java.util.Scanner;
