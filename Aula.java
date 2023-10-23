@@ -23,20 +23,27 @@ public class Teste {
 
 ﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏
 
-package aula_Java;
+package main;
 import java.util.Scanner;
-public class Teste {
-
-    public static void main(String[] args) {
-    	Scanner sc = new Scanner(System.in);
-    	int func;	
-    	double hours;
-    	double hour_pay;
-    	double paycheck;
-    	
-    	System.out.println("Quantos funcionários? ");
-    	func sc1 = int.next();
-    	
-    	
-    }
+public class exemplo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int func;
+		double horas;
+		double valor_hora;
+		double salario;
+		
+		System.out.println("Digite quantos funcionários:");
+		func = sc.nextInt();
+		System.out.println("Digite quantos horas foram trabalhadas:");
+		horas = sc.nextDouble();
+		System.out.println("Qual é o valor da hora trabalhada:");
+		valor_hora = sc.nextDouble();
+		
+		salario = valor_hora * horas;
+		
+		System.out.println("Número de funcionários: " + func);
+		System.out.println("O salário é de: U$" + salario);
+		sc.close();
+	}	
 }
