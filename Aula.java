@@ -14,6 +14,10 @@ public class Teste {
         System.out.printf("%s custa R$ %.2f reais%n", product1, price1);
         System.out.printf("%s custa R$ %.2f reais%n", product2, price2);
         System.out.printf("Registro: %d anos, código: %d e com gênero %d", age, code, gender);
+        System.out.print("Medida com oito casas decimais:" + measure + "\n");
+		System.out.printf("Cercado (três casas decimais): %.3f\n", measure);
+		Locale.setDefault(Locale.US);
+		System.out.printf("Ponto decimal dos EUA: %.3f", measure);
     }
 }
 
