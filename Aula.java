@@ -16,3 +16,22 @@ public class Teste {
         System.out.printf("Registro: %d anos, código: %d e com gênero %d", age, code, gender);
     }
 }
+
+
+package aula_Java;
+import java.util.Scanner;
+public class Teste {
+
+    public static void main(String[] args) {
+    	Scanner sc = new Scanner(System.in);
+    	int func;	
+    	double hours;
+    	double hour_pay;
+    	double paycheck;
+    	
+    	System.out.println("Quantos funcionários? ");
+    	func sc1 = int.next();
+    	
+    	
+    }
+}
