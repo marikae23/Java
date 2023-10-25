@@ -1,4 +1,4 @@
-// Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e mostre:
+// 4) Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e mostre:
 
 // a) a área do triângulo retângulo que tem A por base e C por altura.
 // b) a área do círculo de raio C. (pi = 3.14159).
@@ -38,7 +38,7 @@ public class aulas_java {
 
 ___________________________________________________
     
-// Fazer um programa para ler quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto de C e D segundo a fórmula: DIFERENÇA = (A * B - C * D).
+// 5) Fazer um programa para ler quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto de C e D segundo a fórmula: DIFERENÇA = (A * B - C * D).
 
 // Entrada:     Saída:
 // 5            Diferença = -26
