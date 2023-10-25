@@ -19,3 +19,29 @@ public class Aulasjava {
 }
 
 ﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏
+
+package aulas;
+
+import java.util.Scanner;
+
+public class Aulasjava {
+
+	public static void main(String[] args) {
+		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.println("Digite uma string: ");
+			String inputString = scanner.nextLine();
+			System.out.println("Digite a letra que deseja substituir: ");
+			char letraAlvo = scanner.next().charAt(0);
+			
+			System.out.println("Digite uma letra de substituição: ");
+			char letraSubstituta = scanner.next().charAt(0);
+			String novaString = substituirLetra(inputString, letraAlvo, letraSubstituta);
+			System.out.println("Stringapós a substituição: " + novaString);
+		}
+	}
+	public static String
+	substituirLetra(String input, char alvo, char substituto) {
+		return input.replace(alvo, substituto);
+	}
+
+}
