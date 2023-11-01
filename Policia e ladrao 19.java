@@ -15,7 +15,7 @@ public class Main {
             return;
         }
 
-        List<List<Integer> > graph = new ArrayList<>(N);
+        List<List<Integer>> graph = new ArrayList<>(N);
 
         for (int i = 0; i < N; i++) {
             graph.add(new ArrayList<>());
@@ -40,17 +40,17 @@ public class Main {
                 return;
             }
 
-            int maxDistance = findMaxDistance(graph, Ci, Di, N);
-            System.out.println("Tempo máximo de fuga: " + maxDistance);
+            int maxDistance = findMaxDistance(graph, Di, N);
+            System.out.println(maxDistance);
         }
     }
 
-    private static int findMaxDistance(List<List<Integer> > graph, int start, int target, int N) {
+    private static int findMaxDistance(List<List<Integer>> graph, int target, int N) {
         boolean[] visited = new boolean[N];
-        return dfs(graph, start, target, visited);
+        return dfs(graph, 1, target, visited);
     }
 
-    private static int dfs(List<List<Integer> > graph, int current, int target, boolean[] visited) {
+    private static int dfs(List<List<Integer>> graph, int current, int target, boolean[] visited) {
         if (current == target) {
             return 0;
         }
