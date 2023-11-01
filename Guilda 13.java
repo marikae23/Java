@@ -19,7 +19,7 @@ public class Aulas {
 
             int[] pontos = new int[N + 1];
             int[] guilda = new int[N + 1];
-            int vitorias = 0; // Mova esta declaração para fora do loop
+            int vitorias = 0;
 
             for (int i = 1; i <= N; i++) {
                 pontos[i] = sc.nextInt();
@@ -36,15 +36,17 @@ public class Aulas {
                     int guildaB = guilda[B];
 
                     if (guildaA != guildaB) {
-                        for (int j = 1; j <= N; j++) { // Remova o ponto e vírgula
+                        for (int j = 1; j <= N; j++) {
                             if (guilda[j] == guildaA || guilda[j] == guildaB) {
                                 guilda[j] = guildaA;
                             }
                         }
                     }
-                } else if (Q == 2) { // Mude "i" para "Q" para verificar o tipo de ação
+                } else if (Q == 2) {
                     if (pontos[A] > pontos[B]) {
-                        vitorias++;
+                        if (guilda[A] == 1 || guilda[B] == 1) {
+                            vitorias++;
+                        }
                     }
                 }
             }
